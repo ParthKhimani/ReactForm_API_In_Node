@@ -9,13 +9,13 @@ const userSchema = new mongoose.Schema({
     dateOfBirth: String,
     password: String,
     confirmPassword: String,
-    programmingSkills: String,
+    programmingSkills: [],
     gender: String,
     country: String,
     state: String,
     city: String,
     address: String,
-    qualification: String
+    qualification: []
 });
 
 module.exports = mongoose.model('User', userSchema);
